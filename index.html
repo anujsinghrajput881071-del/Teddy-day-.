@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>Teddy Day</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Classy & Readable Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ffb6c1,#ff8da1);
+  font-family:'Playfair Display', serif;
+  color:#ffffff;
+}
+.card{
+  width:90%;
+  max-width:440px;
+  background:rgba(0,0,0,0.32);
+  padding:28px;
+  border-radius:22px;
+  text-align:center;
+}
+h1{
+  font-size:26px;
+  margin-bottom:12px;
+  font-weight:600;
+}
+p{
+  display:none;
+  font-size:18px;
+  line-height:1.8;
+  margin-top:16px;
+}
+.line6{
+  display:none;
+  font-size:19px;
+  color:#ffe0b2; /* warm premium tone */
+  margin-top:20px;
+  font-style:italic;
+  font-weight:600;
+  line-height:2;
+  text-align:center;
+}
+button{
+  margin-top:24px;
+  padding:12px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  background:#ffffff;
+  color:#ff5f7e;
+  cursor:pointer;
+}
+.signature{
+  margin-top:22px;
+  font-size:15px;
+  display:none;
+  opacity:0.9;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1>Just For You 🧸</h1>
+
+<p id="m1">Aaj Teddy Day hai 🧸</p>
+<p id="m2">Chahta hoon ek teddy ke saath main bhi tum tak pahunch paata.</p>
+<p id="m3">Dooriyan thodi zyada hain,</p>
+<p id="m4">Par ehsaas bilkul paas hai.</p>
+<p id="m5">Ye message sirf tumhare liye…</p>
+
+<p id="m6" class="line6">
+In English we say!!<br>
+You are gorgeous 🌹<br><br>
+BUT IN URDU<br>
+ALADIN Said 😌<br>
+Ki ye tikhi najre 👀 tumhari<br>
+Ye bikhari zulfe tumhari<br>
+Ye mujhe Nazar andaz 😏 karna tera<br>
+Zara soch 🤔<br>
+Kya hal hota hoga mera ❤️‍🩹🥹
+</p>
+
+<div class="signature" id="sign">— Tumhara pyara baccha 🩷</div>
+
+<button onclick="showMessage()">Read Message 🧸</button>
+</div>
+
+<script>
+let i=1;
+function showMessage(){
+  if(i<=5){
+    document.getElementById("m"+i).style.display="block";
+    i++;
+  } else if(i==6){
+    document.getElementById("m6").style.display="block";
+    i++;
+  } else {
+    document.getElementById("sign").style.display="block";
+  }
+}
+</script>
+
+</body>
+</html>
